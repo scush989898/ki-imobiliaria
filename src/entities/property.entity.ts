@@ -38,11 +38,11 @@ class Property {
   @JoinColumn()
   address: Address;
 
-  @ManyToOne(() => Category)
-  category: Category;
-
   @OneToMany(() => Schedules, (schedules) => schedules.property)
   schedules: Schedules[];
+
+  @ManyToOne(() => Category)
+  category: Category;
 }
 
 export { Property };
