@@ -38,15 +38,12 @@ const createScheduleService = async (
       date,
       property: {
         id: property.id,
-      },
-      user: {
-        id: user.id,
-      },
+      }
     },
   });
 
   if (scheduleExists) {
-    throw new AppError("User schedule already exists");
+    throw new AppError("Schedule already exists");
   }
 
   const res = await schedulesRepository.save(createSchedule);
