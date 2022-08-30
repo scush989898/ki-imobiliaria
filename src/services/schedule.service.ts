@@ -66,11 +66,9 @@ const listScheduleByIdService = async (id: string): Promise<Property> => {
       schedules: true,
     },
   });
-  if(!res){
-    throw new AppError('Schedule not found',404)
-  }
+ 
 
-  return res;
+  return res!;
 };
 
 export { createScheduleService, listScheduleByIdService };

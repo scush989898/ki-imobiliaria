@@ -34,10 +34,6 @@ const createPropertyService = async (
     category,
   });
 
-  if (!res) {
-    throw new AppError("Address already exists");
-  }
-
   return res;
 };
 
