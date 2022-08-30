@@ -8,7 +8,7 @@ Aplicação de cadastro, visualização, atualização e remoção de: usuários
 
 ## 🔨 Implementações
 
-- [X] Cadastro, visualização, atualização e remoção de todas as entidades
+- [X] Cadastro, visualização e atualização de todas as entidades
 - [X] Middleware de erro, validação de data/hora, autenticação e de permissão de Administrador.
 - [X] Configurações dos testes e conexão com o banco de dados do teste e banco de produção.
 - [X] Docker
@@ -43,4 +43,8 @@ Aplicação de cadastro, visualização, atualização e remoção de: usuários
 ## Documentação da API
 
 [Link da Documentação](https://documentacaoimobiliaria.vercel.app/) <br>
+
+## Coverage
+
+- Coverage de 98%
 
