@@ -12,6 +12,7 @@ services:
       - DB=e5
       - DB_USER=kenzinho
       - SECRET_KEY=sua_chave_secreta
+    command: sh -c "yarn typeorm migration:run -d src/data-source && yarn dev"
     depends_on:
       db:
         condition: service_healthy
